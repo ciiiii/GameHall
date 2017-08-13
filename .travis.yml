@@ -35,8 +35,7 @@ install:
     if [ "$TRAVIS_OS_NAME" = "linux" ]; then
         sudo apt-get install -qq qt59base &&
         sudo apt-get install -qq qt59webengine &&
-        source /opt/qt56/bin/qt59-env.sh
-        qmake -v
+        source /opt/qt59/bin/qt59-env.sh
     fi
 script:
   - mkdir build && cd build
